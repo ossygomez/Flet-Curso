@@ -5,7 +5,7 @@ from flet import IconButton, Page, Row, TextField, icons
 def main(page: Page):
     page.title = 'Contador'
     page.vertical_alignment = 'center'
-    page.horizontal_alignment = 'center'
+    
 
     txt_numero = TextField(value='0', text_align='right', width=100)
 
@@ -23,7 +23,7 @@ def main(page: Page):
                 IconButton(icons.REMOVE, on_click=reducir_clicked),
                 txt_numero,
                 IconButton(icons.ADD, on_click=aumentar_clicked)
-            ]
+            ], alignment = 'center'
         )
     )
 

@@ -1,6 +1,6 @@
 import flet
 from flet import Column, ElevatedButton, Page, Text, TextField
-from flet.ref import Ref
+from flet import Ref
 
 
 def main(page: Page):
